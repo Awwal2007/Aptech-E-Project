@@ -1,0 +1,103 @@
+.dark header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.light header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+header .logo img {
+    width: 100%;
+    height: 40px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+.dark header nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+.light header nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+header nav ul li a.active {
+    color: var(--accent-color);
+    font-weight: 650;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+header .visitor-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header .visitor-counter p {
+    margin: 0 1rem;
+    background-color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+
+header .visitor-counter .counter {
+    color: var(--secondary-color);
+}
+
+.dark header .visitor-counter .toggle-mode-btn {
+    cursor: pointer;
+    font-size: 2.5rem;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+.light header .visitor-counter .toggle-mode-btn {
+    cursor: pointer;
+    font-size: 2.5rem;
+    background-color: var(--second-bg-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+header .visitor-counter .toggle-mode-btn:hover {
+    color: var(--accent-color);
+}

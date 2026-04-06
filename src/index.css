@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: #0A0A0C;
+  --secondary-color: #fff;
+  --accent-color: #E63946;
+  --accent-color-hover: #c62e3b;
+  --bg-color: #111115;
+  --second-bg-color: #23232D;
+  --border-color: #ffffff41;
+  --text-color: #fff;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.dark.theme {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.light.theme {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
