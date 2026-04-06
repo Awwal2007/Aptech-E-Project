@@ -37,7 +37,7 @@ const App = () => {
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-            <Footer />
+            <Footer theme={theme} />
         </Router>
     </main>
     </>

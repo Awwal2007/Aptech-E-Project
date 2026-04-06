@@ -1,0 +1,169 @@
+.hero-section {
+  position: relative;
+  background-color: var(--bg-color);
+  /* Replicating the faint pinkish-gray grid */
+  background-image: 
+    linear-gradient(var(--hero-grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hero-grid-color) 1px, transparent 1px);
+  background-size: 60px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px;
+  min-height: 70vh;
+  overflow: hidden;
+}
+
+/* Subtle glow behind the text */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 70% 50%, var(--hero-glow-color) 30%, transparent 80%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 55%;
+}
+
+.hero-title {
+  font-size: 7rem;
+  line-height: .9;
+  font-family: var(--hero-font-family);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-color);
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  /* Add slight text shadow for better visibility */
+  text-shadow: 0 2px 3px var(--border-color);
+}
+
+.hero-title-line {
+  display: block;
+}
+
+.text-accent {
+  color: var(--accent-color); /* Matching the red */
+}
+
+.hero-subtitle {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 480px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.hero-btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px; /* Slightly rounded edges as seen in image */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: var(--font-family);
+  letter-spacing: 1px;
+}
+
+.hero-btn:hover {
+  background-color: var(--accent-color-hover);
+  transform: translateY(-2px);
+}
+
+.hero-image-container {
+  position: relative;
+  z-index: 1;
+  right: 300px;
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  /* Push it a bit down/up depending */
+}
+
+.hero-car-img {
+  width: 150%; /* Make the image bleed out slightly to make it look large */
+  max-width: none;
+  transform: translateX(10%); /* Pushed to the right */
+  object-fit: contain;
+  /* Optional: strong dropping shadow matching the vehicle */
+  filter: drop-shadow(0 30px 40px rgba(0,0,0,0.6));
+}
+
+.hero-car-slide {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease-in-out;
+}
+
+.hero-indicators {
+  position: absolute;
+  bottom: 50px;
+  right: 20%;
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+}
+
+.indicator {
+  width: 40px;
+  height: 4px;
+  background-color: var(--text-color);
+  opacity: 0.3;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.indicator.active {
+  background-color: var(--accent-color);
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  .hero-car-img {
+    width: 130%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 60px 5%;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-subtitle {
+    text-align: center;
+  }
+  .hero-image-container {
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .hero-car-img {
+    width: 100%;
+    transform: none;
+  }
+  .hero-indicators {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20px;
+  }
+}
