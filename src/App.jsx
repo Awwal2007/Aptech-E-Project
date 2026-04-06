@@ -10,8 +10,16 @@ import { useState } from 'react'
 
 const App = () => {
   const [theme, setTheme] = useState('dark')
+
   useEffect(() => {
-    document.getElementById('body').className = `${theme} theme`
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme) setTheme(savedTheme)
+  }, [])
+
+  useEffect(() => {
+    document.body.classList.remove('dark', 'light')
+    document.body.classList.add(theme)
+    localStorage.setItem('theme', theme)
   }, [theme])
 
   const toggleTheme = () => {
