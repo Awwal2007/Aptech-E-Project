@@ -1,0 +1,46 @@
+/* TickerBox container */
+.ticker-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #18181b; /* zinc-900 */
+  color: #ffffff;
+  padding: 0.5rem 0; /* py-2 */
+  overflow: hidden;
+  z-index: 50;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* border-white/10 */
+}
+
+/* The moving wrapper */
+.ticker-wrapper {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+/* Individual items within the ticker */
+.ticker-item {
+  margin: 0 2rem; /* mx-8 */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+}
+
+/* Branding text style */
+.ticker-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* tracking-widest */
+  font-size: 0.75rem; /* text-xs */
+  opacity: 0.5;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

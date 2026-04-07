@@ -1,0 +1,373 @@
+.fleet-container {
+  background-color: var(--bg-color);
+  padding: 80px 3%;
+  min-height: 100vh;
+}
+
+.fleet-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.fleet-subtitle {
+  color: var(--accent-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.fleet-title {
+  color: var(--text-color);
+  font-family: var(--hero-font-family);
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+.fleet-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* SIDEBAR STYLES */
+.fleet-sidebar {
+  width: 250px;
+  background-color: var(--second-bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  position: sticky;
+  top: 10px;
+}
+
+.fleet-sidebar h3 {
+  color: var(--text-color);
+  font-family: var(--hero-font-family);
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.filter-group {
+  margin-bottom: 25px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
+.filter-group input[type="text"],
+.filter-group select {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.filter-group input[type="text"]::placeholder {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.filter-group select option {
+  color: black;
+}
+.search-box {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.price-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.price-display {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.price-slider {
+  width: 100%;
+  accent-color: var(--accent-color);
+  height: 4px;
+  margin-bottom: 10px;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-reset, .btn-apply {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-reset {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+}
+
+.btn-apply {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.btn-apply:hover {
+  background-color: var(--accent-color-hover);
+}
+
+/* CAR GRID STYLES */
+.fleet-main {
+  flex: 1;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.car-card {
+  background-color: var(--second-bg-color);
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-img-wrapper {
+  position: relative;
+  height: 220px;
+}
+
+.car-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-hot {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  backdrop-filter: blur(5px);
+}
+
+.badge-hot::before {
+  content: '•';
+  color: var(--accent-color);
+  margin-right: 5px;
+}
+
+.btn-wishlist {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+}
+
+.btn-wishlist:hover {
+  color: var(--accent-color);
+}
+
+.btn-wishlist.active {
+  color: var(--accent-color);
+}
+
+
+.car-details {
+  padding: 25px;
+}
+
+.car-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.car-price {
+  color: var(--accent-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.car-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+.spec-tag {
+  font-size: 0.5rem;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.btn-view {
+  width: 100%;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-view:hover {
+  background-color: var(--accent-color-hover);
+}
+
+/* PAGINATION STYLES */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.pag-num, .pag-arrow {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.pag-num.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+
+.pag-num:hover:not(.active),
+.pag-arrow:hover:not([disabled]) {
+  border-color: var(--accent-color);
+  background-color: rgba(230, 57, 70, 0.1);
+}
+
+.pag-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1024px) {
+  .fleet-layout {
+    flex-direction: column;
+  }
+  .fleet-sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .car-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fleet-title {
+    font-size: 2.5rem;
+  }
+  .fleet-container {
+    padding: 60px 20px;
+  }
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--second-bg-color);
+  border-radius: 12px;
+  border: 1px dashed var(--border-color);
+}
+
+.no-results h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.no-results p {
+  opacity: 0.6;
+  color: var(--text-color);
+}
