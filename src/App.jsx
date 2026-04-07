@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound'
 import Gallery from './pages/Gallery'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Contact from './pages/Contact'
 import { useState } from 'react'
 import TickerBox from './components/TickerBox'
 
