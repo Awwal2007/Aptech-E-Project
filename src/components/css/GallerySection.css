@@ -20,11 +20,12 @@
 }
 
 .gallery-title {
+    font-family: "Bebas Neue", sans-serif;
     text-align: center;
     font-size: clamp(3rem, 10vw, 2rem); /* Scaled up for a bolder look */
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: 2px;
     margin-bottom: 60px;
 }
 
