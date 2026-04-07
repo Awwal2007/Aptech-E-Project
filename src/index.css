@@ -11,6 +11,7 @@
   --secondary-color: #0A0A0C;
   --accent-color: #E63946;
   --accent-color-hover: #c62e3b;
+  --accent-transparent: #e639473f;
   --bg-color: #ffffff;
   --second-bg-color: #f5f5f5;
   --border-color: #00000020;
@@ -19,6 +20,7 @@
   --hero-font-family: "Bebas Neue", sans-serif;
   --hero-grid-color: rgba(241, 241, 241, 0.05);
   --hero-glow-color: rgba(230, 57, 70, 0.05);
+  --side-padding: 2.5rem;
 }
 
 /* AUTO DARK MODE (system preference) */
@@ -63,6 +65,10 @@
   --btn-text: #ffffff;
   --hero-grid-color: rgba(0, 0, 0, 0.05);
   --hero-glow-color: rgba(230, 57, 70, 0.05);
+  --gallery-bg: #ffffff;
+  --gallery-text: #000000;
+  --modal-bg: rgba(255, 255, 255, 0.98);
+  --card-shadow: rgba(0, 0, 0, 0.2);
 }
 
 /* BASE STYLES */
