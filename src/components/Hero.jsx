@@ -27,7 +27,10 @@ const Hero = () => {
         <p className="hero-subtitle">
           Carrio Motors crafts vehicles for those who refuse to compromise. Where raw power meets refined luxury — engineered for the extraordinary.
         </p>
-        <button className="hero-btn">Explore</button>
+        <div className="hero-btn-container">
+          <button className="hero-btn">Explore</button>
+          <button className="hero-btn-sec">Contact</button>
+        </div>
       </div>
       
       <div className="hero-image-container">
