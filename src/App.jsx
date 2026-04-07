@@ -7,7 +7,7 @@ import Gallery from './pages/Gallery'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { useState } from 'react'
-import Contact from './pages/Contact'
+import TickerBox from './components/TickerBox'
 
 const App = () => {
   const [theme, setTheme] = useState('dark')
@@ -39,6 +39,7 @@ const App = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
+                <TickerBox />
             <Footer theme={theme} />
         </Router>
     </main>

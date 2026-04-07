@@ -3,15 +3,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2.5rem;
+    padding: 1rem var(--side-padding);
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
 }
 
 /* LOGO */
 header .logo img {
-    width: 100%;
     height: 40px;
 }
 
@@ -78,4 +78,97 @@ header .visitor-counter .toggle-mode-btn {
 
 header .visitor-counter .toggle-mode-btn:hover {
     color: var(--accent-color);
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger:hover {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+        padding: 1rem 1.5rem;
+        z-index: 10000;
+    }
+
+    header .logo img {
+        height: 30px;
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        border-bottom: 1px solid var(--border-color);
+        padding: 2rem 1rem;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 9999;
+    }
+
+    header nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+        display: block;
+    }
+
+    header .visitor-counter p {
+        display: none; /* Hide visitor text on very small screens to save space */
+    }
+
+    header .visitor-counter .toggle-mode-btn {
+        font-size: 1.8rem;
+    }
+
+    header .hamburger {
+        display: flex;
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+
+    header .visitor-counter {
+        margin-left: auto; /* Pushes the toggle to the right next to hamburger */
+        gap: 0.5rem;
+    }
 }
