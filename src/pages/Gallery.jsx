@@ -1,8 +1,12 @@
 import React from 'react'
+import GallerySection from '../components/GallerySection'
 
-const Gallery = () => {
+
+function Gallery() {
   return (
-    <div>Gallery</div>
+    <div>
+      <GallerySection />
+    </div>
   )
 }
 
