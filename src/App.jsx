@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { useState } from 'react'
+import Contact from './pages/Contact'
 
 const App = () => {
   const [theme, setTheme] = useState('dark')
@@ -35,6 +36,7 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/contact" element={<Contact />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             <Footer theme={theme} />

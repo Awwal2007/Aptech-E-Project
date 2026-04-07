@@ -19,7 +19,7 @@ const Navbar = ({theme, toggleTheme}) => {
             <li><a href="#brands">Brands</a></li>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/gallery">Gallery</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
           </ul>
         </nav>
         <div className="visitor-counter">

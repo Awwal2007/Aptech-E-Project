@@ -1,0 +1,228 @@
+.second-div-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 0px 50px;
+    gap: 40px;
+}
+
+.GET-IN {
+    font-family: var(--hero-font-family);
+    font-size: 44px;
+
+}
+
+.wrap-Location {}
+
+.location {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.back-location {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    padding-left: 13px;
+    padding-top: 15px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.back-location:hover {
+    background-color: var(--accent-color-hover);
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.icon {
+    width: 30px;
+    height: 30.75px;
+}
+
+.location strong {
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: 22px;
+
+}
+
+.location span {
+    font-size: 12px;
+    font-weight: normal;
+
+}
+
+.location a {
+    font-size: 12px;
+    font-weight: normal;
+
+}
+
+.Form-container {
+    background-color: var(--secondary-color);
+    width: 100%;
+    max-width: 520px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Feedback {
+    font-weight: bolder;
+    color: var(--primary-color);
+    font-size: 20px;
+
+
+}
+
+.display-john {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.labe {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.labe input {
+    width: 120px;
+    height: 50px;
+}
+
+.john {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.john::placeholder {
+    font-weight: bold;
+
+}
+
+.rate-container {
+    margin-top: 20px;
+
+}
+
+.ratting {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+.display-star {
+    display: flex;
+    margin-top: 5px;
+}
+
+.hold-star {}
+
+.star {
+    color: var(--primary-color);
+    font-size: 25px;
+
+    cursor: pointer;
+    transition: all 0.6s ease;
+
+}
+
+.star:hover {
+    color: var(--accent-color-hover);
+}
+
+.message-container{
+margin-top: 15px;
+}
+
+.labe-message{
+  color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.messages{
+width: 100%;
+height: 100px;
+margin-top: 10px; 
+border-radius: 10px;
+ border: 1px solid var(--primary-color);
+ resize: none;
+}
+
+.messages::placeholder{
+    font-weight: bold; 
+    
+}
+
+.star {
+  font-size: 24px;
+}
+
+.filled {
+  color: var(--accent-color);
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: white;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .second-div-section {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .Form-container {
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .display-john {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .GET-IN {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .location {
+        align-items: flex-start;
+    }
+
+    .back-location {
+        width: 50px;
+        height: 50px;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .wrap-Location {
+        text-align: left;
+    }
+}
