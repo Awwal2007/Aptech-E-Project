@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { useState } from 'react'
+import TickerBox from './components/TickerBox'
 
 const App = () => {
   const [theme, setTheme] = useState('dark')
@@ -37,6 +38,7 @@ const App = () => {
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
+                <TickerBox />
             <Footer theme={theme} />
         </Router>
     </main>

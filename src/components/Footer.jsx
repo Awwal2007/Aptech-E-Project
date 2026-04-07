@@ -9,11 +9,11 @@ const Footer = ({ theme }) => {
   return (
     <footer>
       <div className="footer-column">
-        <div className="logo">
+        <Link to='/' className="logo">
           {
             theme === 'dark' ? <img src={logo} alt="logo white" /> : <img src={logoWhite} alt="logo black" />
           }
-        </div>
+        </Link>
         <p>Driving the future of automotive excellence since 2008. Every vehicle is a promise — to push boundaries and redefine what's possible on the road.</p>
         <div className="socials">
           <FaInstagram />
