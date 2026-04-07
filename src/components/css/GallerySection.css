@@ -70,6 +70,7 @@
 
 .img-card:hover img {
     transform: scale(1.1);
+    background-color: rgba(225, 29, 71, 0.678);
 }
 
 .nav-btn {
@@ -152,3 +153,151 @@
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
+/* ... Keep all your existing root, wrapper, and grid styles ... */
+
+.img-card {
+    position: relative;
+    background-color: #111;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: var(--card-radius);
+}
+
+/* New: Fade-in Overlay for Grid Cards */
+.card-info-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+.info-brand {
+    color: var(--accent-red);
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.info-model {
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover effect to show text on card */
+.img-card:hover .card-info-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Modal Details: Smooth Reveal */
+.modal-details-reveal {
+    margin-top: 20px;
+    text-align: center;
+    animation: lightReveal 0.8s ease forwards;
+}
+
+.modal-details-reveal h2 {
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.modal-details-reveal p {
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+@keyframes lightReveal {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* ... keep your existing grid and overlay styles ... */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 4rem; /* Larger for better visibility */
+    font-weight: 200;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 10001; /* Above everything */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--accent-red);
+    transform: rotate(90deg);
+}
+
+/* Nav buttons visibility update */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: white;
+    font-size: 3.5rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(225, 29, 72, 0.4);
+}
+
+.nav-btn.prev { left: 40px; }
+.nav-btn.next { right: 40px; }
+
+/* Mobile adjustments for the close button */
+@media (max-width: 768px) {
+    .close-btn {
+        top: 20px;
+        right: 25px;
+        font-size: 3rem;
+    }
+    
+    .nav-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+}
+
+/* ... Keep all your modal-overlay, nav-btn, and animation styles ... */
