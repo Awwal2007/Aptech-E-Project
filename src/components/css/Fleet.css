@@ -176,7 +176,7 @@
 
 .car-card {
   background-color: var(--second-bg-color);
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
   border: 1px solid var(--border-color);
   transition: transform 0.3s ease;

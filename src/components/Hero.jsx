@@ -38,6 +38,7 @@ const Hero = () => {
         <img 
           src={images[0]} 
           alt="" 
+          loading='lazy'
           className="hero-car-img" 
           style={{ visibility: 'hidden', position: 'relative' }} 
         />
@@ -50,6 +51,7 @@ const Hero = () => {
               src={src} 
               alt={`Car view ${index + 1}`} 
               className="hero-car-img hero-car-slide" 
+              loading='lazy'
               style={{
                 position: 'absolute',
                 top: 0,

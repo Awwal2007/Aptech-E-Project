@@ -19,6 +19,7 @@
   --hero-font-family: "Bebas Neue", sans-serif;
   --hero-grid-color: rgba(241, 241, 241, 0.05);
   --hero-glow-color: rgba(230, 57, 70, 0.05);
+  --side-padding: 2.5rem;
 }
 
 /* AUTO DARK MODE (system preference) */

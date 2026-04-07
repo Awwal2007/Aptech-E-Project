@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaCalendar, FaClock, FaMap } from "react-icons/fa";
-import "./css/TickerBox.css"; // Ensure this path matches your file structure
+import { FaCalendar, FaClock, FaMap, FaCar } from "react-icons/fa";
+import "./css/TickerBox.css";
 
 export default function TickerBox() {
   const [dateTime, setDateTime] = useState(new Date());
@@ -16,39 +16,47 @@ export default function TickerBox() {
             `${position.coords.latitude.toFixed(2)}°N, ${position.coords.longitude.toFixed(2)}°E`,
           );
         },
-        () => setLocation("Location access denied"),
+        () => setLocation("Lagos, Nigeria"), // Fallback location
       );
     }
 
     return () => clearInterval(timer);
   }, []);
 
+  const tickerItems = (
+    <>
+      <span className="ticker-item">
+        <div className="live-indicator">
+          <div className="live-dot"></div>
+          LIVE
+        </div>
+      </span>
+      <span className="ticker-item">
+        <FaClock /> {dateTime.toLocaleTimeString()}
+      </span>
+      <span className="ticker-item">
+        <FaCalendar /> {dateTime.toLocaleDateString()}
+      </span>
+      <span className="ticker-item">
+        <FaMap /> {location}
+      </span>
+      <span className="ticker-item ticker-brand">
+        <FaCar /> Carrio Motors - Engineering the Extraordinary
+      </span>
+      <span className="ticker-item">
+        New Model: "Future-S" Launching Soon
+      </span>
+      <span className="ticker-item">
+          Trusted by over 5,000 drivers worldwide
+      </span>
+    </>
+  );
+
   return (
     <div className="ticker-container">
       <div className="ticker-wrapper">
-        <span className="ticker-item">
-          <FaClock /> {dateTime.toLocaleTimeString()}
-        </span>
-        <span className="ticker-item">
-          <FaCalendar /> {dateTime.toLocaleDateString()}
-        </span>
-        <span className="ticker-item">
-          <FaMap /> {location}
-        </span>
-        <span className="ticker-item ticker-brand">
-          Bronx Luggage - Excellence in Travel Since 1995
-        </span>
-        
-        {/* Duplicate set for seamless looping */}
-        <span className="ticker-item">
-          <FaClock /> {dateTime.toLocaleTimeString()}
-        </span>
-        <span className="ticker-item">
-          <FaCalendar /> {dateTime.toLocaleDateString()}
-        </span>
-        <span className="ticker-item">
-          <FaMap /> {location}
-        </span>
+        {tickerItems}
+        {tickerItems}
       </div>
     </div>
   );

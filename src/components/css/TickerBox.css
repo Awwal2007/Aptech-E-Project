@@ -1,38 +1,74 @@
 /* TickerBox container */
 .ticker-container {
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
-  background-color: #18181b; /* zinc-900 */
-  color: #ffffff;
-  padding: 0.5rem 0; /* py-2 */
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.6rem 0;
   overflow: hidden;
-  z-index: 50;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* border-white/10 */
+  z-index: 1000;
+  border-top: 1px solid var(--border-color);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family);
 }
 
 /* The moving wrapper */
 .ticker-wrapper {
   display: flex;
   white-space: nowrap;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
+}
+
+.ticker-wrapper:hover {
+    animation-play-state: paused;
 }
 
 /* Individual items within the ticker */
 .ticker-item {
-  margin: 0 2rem; /* mx-8 */
+  margin: 0 3rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* gap-2 */
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.ticker-item svg {
+    color: var(--accent-color);
+    font-size: 1.1rem;
 }
 
 /* Branding text style */
 .ticker-brand {
   text-transform: uppercase;
-  letter-spacing: 0.1em; /* tracking-widest */
-  font-size: 0.75rem; /* text-xs */
-  opacity: 0.5;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.live-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-color);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.live-dot {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
 }
 
 /* Marquee Animation */
@@ -43,4 +79,18 @@
   100% {
     transform: translateX(-50%);
   }
+
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+@media screen and (max-width: 768px) {
+    .ticker-item {
+        margin: 0 1.5rem;
+        font-size: 0.8rem;
+    }
 }

@@ -11,7 +11,7 @@ const Footer = ({ theme }) => {
       <div className="footer-column">
         <Link to='/' className="logo">
           {
-            theme === 'dark' ? <img src={logo} alt="logo white" /> : <img src={logoWhite} alt="logo black" />
+            theme === 'dark' ? <img loading='lazy' src={logo} alt="logo white" /> : <img loading='lazy' src={logoWhite} alt="logo black" />
           }
         </Link>
         <p>Driving the future of automotive excellence since 2008. Every vehicle is a promise — to push boundaries and redefine what's possible on the road.</p>
@@ -27,16 +27,16 @@ const Footer = ({ theme }) => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">Shop</Link></li>
           <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/contact">Brand</Link></li>
+          <li><Link to="/#brands">Brands</Link></li>
         </ul>
       </div>
       <div className="footer-column">
         <h3>Support</h3>
         <ul>
           <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/gallery">Site Map</Link></li>
-          <li><Link to="/contact">Privacy Policy</Link></li>
-          <li><Link to="/contact">Terms of Use</Link></li>
+          <li><Link to="/sitemap">Site Map</Link></li>
+          <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
         </ul>
       </div>
     </footer>

@@ -13,6 +13,10 @@ const Fleet = () => {
     fuelType: 'All Fuels'
   });
 
+  const [selectedCar, setSelectedCar] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+
   // Active state used for the visible results
   const [activeFilters, setActiveFilters] = useState({ ...tempFilters });
   
@@ -161,7 +165,7 @@ const Fleet = () => {
                 <div key={car.id} className="car-card">
                   <div className="car-img-wrapper">
                     <span className="badge-hot">HOT</span>
-                    <img src={car.images[0]} alt={car.model} />
+                    <img loading='lazy' src={car.images[0]} alt={car.model} />
                     <button className="btn-wishlist">
                       <BiHeart />
                     </button>
@@ -174,7 +178,7 @@ const Fleet = () => {
                         <span key={i} className="spec-tag">{feat.value}</span>
                       ))}
                     </div>
-                    <button className="btn-view">View Details</button>
+                    <button onClick={()=> {setSelectedCar(car); setShowModal(true)}} className="btn-view">View Details</button>
                   </div>
                 </div>
               ))
@@ -218,8 +222,25 @@ const Fleet = () => {
           )}
         </div>
       </div>
+      {showModal && (
+        <CarsDetails car={selectedCar}/>
+      )}
     </section>
   );
 };
+
+
+const CarsDetails = ({ car }) => {
+  return (
+    <div className='modal'>
+      <div className='modal-content'>
+        <div className='slide-image-container'>
+          <img loading='lazy' src={car.images[0]} alt={car.id} />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 
 export default Fleet;

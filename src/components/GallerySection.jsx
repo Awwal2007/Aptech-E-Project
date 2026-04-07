@@ -65,6 +65,7 @@ const GallerySection = () => {
                 key={images[currentIndex].src}
                 src={images[currentIndex].src} 
                 className="slide-anim"
+                loading='lazy'
                 alt={images[currentIndex].brand} 
               />
               <div className="modal-details-reveal">
