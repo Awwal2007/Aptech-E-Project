@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import './css/Fleet.css';
 import carsData from '../data/cars';
-import { BiSearch, BiChevronDown, BiChevronLeft, BiChevronRight, BiHeart } from 'react-icons/bi';
+import { BiSearch, BiChevronDown, BiChevronLeft, BiChevronRight, BiHeart, BiX } from 'react-icons/bi';
 
 const Fleet = () => {
   // Temporary state for inputs
@@ -223,19 +223,29 @@ const Fleet = () => {
         </div>
       </div>
       {showModal && (
-        <CarsDetails car={selectedCar}/>
+        <CarsDetails car={selectedCar} setShowModal={setShowModal}/>
       )}
     </section>
   );
 };
 
 
-const CarsDetails = ({ car }) => {
+const CarsDetails = ({ car, setShowModal }) => {
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
   return (
-    <div className='modal'>
+    <div className='modal' onClick={(e)=> e.target.className === 'modal' ? setShowModal(false) : null}>
       <div className='modal-content'>
+        <BiX className='close-btn' onClick={()=> setShowModal(false)}/>
         <div className='slide-image-container'>
-          <img loading='lazy' src={car.images[0]} alt={car.id} />
+          <div className="chevron-icon">
+            <BiChevronLeft onClick={() => setActiveImageIndex(prevIndex => (prevIndex - 1 + car.images.length) % car.images.length)} />
+            <BiChevronRight onClick={() => setActiveImageIndex(prevIndex => (prevIndex + 1 + car.images.length) % car.images.length)} />
+          </div>
+          <img loading='lazy' src={car.images[activeImageIndex]} alt={car.id} />
+        </div>
+        <div className='modal-details'>
+          
         </div>
       </div>
     </div>

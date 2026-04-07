@@ -75,7 +75,7 @@
   flex-direction: column;
   gap: .8rem;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
 }
 
 .feature-card:hover {
@@ -103,7 +103,7 @@
   font-weight: 800;
   letter-spacing: 0.15em;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .feature-text {
