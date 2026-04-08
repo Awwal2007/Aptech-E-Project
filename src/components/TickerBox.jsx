@@ -47,7 +47,7 @@ export default function TickerBox() {
         New Model: "Future-S" Launching Soon
       </span>
       <span className="ticker-item">
-          Trusted by over 5,000 drivers worldwide
+          Trusted by over 5,000 people worldwide
       </span>
     </>
   );

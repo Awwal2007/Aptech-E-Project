@@ -1,7 +1,7 @@
 .fleet-container {
   background-color: var(--bg-color);
   padding: 80px 3%;
-  min-height: 100vh;
+  min-height: 150vh;
 }
 
 .fleet-header {
@@ -170,7 +170,7 @@
 
 .car-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 10px;
 }
 
@@ -238,7 +238,7 @@
 
 
 .car-details {
-  padding: 25px;
+  padding: 20px 15px;
 }
 
 .car-details h3 {
@@ -332,6 +332,7 @@
 @media screen and (max-width: 1024px) {
   .fleet-layout {
     flex-direction: column;
+    align-items:normal;
   }
   .fleet-sidebar {
     width: 100%;
@@ -374,59 +375,282 @@
 
 
 
-.modal{
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--modal-bg);
-  backdrop-filter: blur(5px);
-  z-index: 1000;
+  backdrop-filter: blur(10px);
+  z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
-.modal .modal-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content .slide-image-container {
-  position: relative;
-}
-.modal-content .slide-image-container .chevron-icon{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  padding: 0px 10px;
-  top: 140px;
+.modal-content {
+  background-color: var(--modal-content-bg);
   width: 100%;
+  max-width: 600px;
+  max-height: 95vh;
+  border-radius: 30px;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--modal-border);
 }
 
-.modal-content .slide-image-container .chevron-icon svg{
-  font-size: 2.5rem;
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-image-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 2;
+  background-color: #000;
+}
+
+.modal-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  background-color: var(--accent-color);
+}
+
+.modal-nav-arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.modal-nav-arrow {
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+}
+
+.modal-nav-arrow:hover {
+  background-color: var(--accent-color);
+}
+
+.modal-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.modal-indicator {
+  width: 12px;
+  height: 4px;
+  background-color: var(--modal-indicator-bg);
+  border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.modal-indicator.active {
+  width: 30px;
+  background-color: var(--modal-indicator-active);
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+.modal-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5px;
+  font-family: var(--hero-font-family);
+}
+
+.modal {
+  font-size: 3rem;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.modal-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  font-family: var(--hero-font-family);
+}
+
+.modal-subtitle {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-family: var(--hero-font-family);
+  opacity: 0.5;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.modal-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+
+.modal-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.modal-spec-item {
+  background-color: var(--second-bg-color);
+  border: 1px solid var(--modal-border);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.spec-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-color);
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+.spec-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.modal-extra-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  border-top: 1px solid var(--modal-border);
+}
+
+.extra-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.extra-tab-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.extra-tab-btn.outline {
+  background: transparent;
+  border: 1px solid var(--modal-border);
+  color: var(--text-color);
+}
+
+.extra-tab-btn.filled {
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
   color: white;
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0.333);
 }
 
-.modal-content .slide-image-container .chevron-icon svg:hover{
-  background: var(--accent-transparent);
+.extra-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  opacity: 0.6;
 }
 
-.modal-content .slide-image-container img{
-  width: 600px;
-  object-fit: cover;
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-  display: block;
-  height: 300px;
+.btn-buy-now {
+  width: 100%;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 650;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.btn-buy-now:hover {
+  background-color: var(--accent-color-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(230, 57, 70, 0.3);
+}
+
+/* Modal Responsive */
+@media screen and (max-width: 600px) {
+  .modal-body {
+    padding: 25px;
+  }
+  .modal {
+    font-size: 2rem;
+  }
+  .modal-price {
+    font-size: 1.8rem;
+  }
+  .modal-specs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modal-extra-sections {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .slide-image-container {
+    height: 250px;
+  }
 }

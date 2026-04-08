@@ -1,7 +1,6 @@
 .hero-section {
   position: relative;
   background-color: var(--bg-color);
-  /* Replicating the faint pinkish-gray grid */
   background-image: 
     linear-gradient(var(--hero-grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--hero-grid-color) 1px, transparent 1px);
@@ -14,7 +13,7 @@
   overflow: hidden;
 }
 
-/* Subtle glow behind the text */
+
 .hero-section::before {
   content: '';
   position: absolute;
@@ -26,12 +25,12 @@
 
 .hero-content {
   position: relative;
-  z-index: 1;
-  max-width: 55%;
+  z-index: 2;
+  max-width: 600px;
 }
 
 .hero-title {
-  font-size: 7rem;
+  font-size: clamp(3rem, 8vw, 7rem);
   line-height: .9;
   font-family: var(--hero-font-family);
   font-weight: 800;
@@ -39,7 +38,6 @@
   color: var(--text-color);
   letter-spacing: 3px;
   margin-bottom: 1rem;
-  /* Add slight text shadow for better visibility */
   text-shadow: 0 2px 3px var(--border-color);
 }
 
@@ -48,7 +46,7 @@
 }
 
 .text-accent {
-  color: var(--accent-color); /* Matching the red */
+  color: var(--accent-color); 
 }
 
 .hero-subtitle {
@@ -75,7 +73,7 @@
   padding: 8px 40px;
   font-size: 1.2rem;
   font-weight: 500;
-  border-radius: 8px; /* Slightly rounded edges as seen in image */
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: var(--font-family);
@@ -89,7 +87,7 @@
   padding: 8px 40px;
   font-size: 1.2rem;
   font-weight: 500;
-  border-radius: 8px; /* Slightly rounded edges as seen in image */
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: var(--font-family);
@@ -118,19 +116,17 @@
 .hero-image-container {
   position: relative;
   z-index: 1;
-  right: 300px;
-  width: 45%;
+  width: 44%;
   display: flex;
   justify-content: flex-end;
-  /* Push it a bit down/up depending */
+  left: -20%;
 }
 
 .hero-car-img {
-  width: 150%; /* Make the image bleed out slightly to make it look large */
+  width: 150%;
   max-width: none;
-  transform: translateX(10%); /* Pushed to the right */
+  transform: translateX(calc(10% + (var(--offset) * 50%)));
   object-fit: contain;
-  /* Optional: strong dropping shadow matching the vehicle */
   filter: drop-shadow(0 30px 40px rgba(0,0,0,0.6));
 }
 
@@ -162,9 +158,16 @@
 }
 
 /* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .hero-section {
+    padding: 40px 5%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  .hero-title {
-    font-size: 4.5rem;
+  .hero-image-container {
+    width: 60%;
+    left: -10%;
   }
   .hero-car-img {
     width: 130%;
@@ -174,30 +177,63 @@
 @media screen and (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    padding: 60px 5%;
+    padding: 60px 20px;
     text-align: center;
+    min-height: auto;
+    gap: 3rem;
   }
+  
   .hero-content {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .hero-subtitle {
     text-align: center;
+    margin: 0 auto 1.5rem;
   }
+
   .hero-image-container {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 0;
     justify-content: center;
+    height: 300px;
+    left: 0%;
   }
+
   .hero-car-img {
     width: 100%;
-    transform: none;
+    transform: translateX(calc(var(--offset) * 100%));
+    left: 0;
   }
+
   .hero-indicators {
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 20px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    padding: 40px 15px;
+  }
+  
+  .hero-btn-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .hero-btn, .hero-btn-sec {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .hero-image-container {
+    height: 200px;
   }
 }

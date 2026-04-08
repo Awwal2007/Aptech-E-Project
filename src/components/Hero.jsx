@@ -3,6 +3,7 @@ import './css/Hero.css';
 import heroImg1 from '../assets/heroImg1.png';
 import heroImg2 from '../assets/heroimg2.png';
 import heroImg3 from '../assets/heroimg3.png';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const images = [heroImg1, heroImg2, heroImg3];
@@ -28,8 +29,8 @@ const Hero = () => {
           Carrio Motors crafts vehicles for those who refuse to compromise. Where raw power meets refined luxury — engineered for the extraordinary.
         </p>
         <div className="hero-btn-container">
-          <button className="hero-btn">Explore</button>
-          <button className="hero-btn-sec">Contact</button>
+          <a href='#brand' className="hero-btn">Explore</a>
+          <Link to="/contact" className="hero-btn-sec">Contact</Link>
         </div>
       </div>
       
@@ -56,7 +57,7 @@ const Hero = () => {
                 position: 'absolute',
                 top: 0,
                 left: 0,
-                transform: `translateX(calc(10% + ${offset * 50}%))`, // 50% slide for smoothness since cars are huge
+                '--offset': offset,
                 opacity: offset === 0 ? 1 : 0,
                 zIndex: offset === 0 ? 2 : 1,
                 pointerEvents: offset === 0 ? 'auto' : 'none'

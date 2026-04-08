@@ -21,7 +21,7 @@ const Fleet = () => {
   const [activeFilters, setActiveFilters] = useState({ ...tempFilters });
   
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
 
   // Derive unique filter options from data
   const carTypes = ['All Types', ...new Set(carsData.cars.map(car => car.category))];
@@ -233,24 +233,75 @@ const Fleet = () => {
 const CarsDetails = ({ car, setShowModal }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
+  if (!car) return null;
+
   return (
-    <div className='modal' onClick={(e)=> e.target.className === 'modal' ? setShowModal(false) : null}>
+    <div className='modal' onClick={(e) => (e.target.className === 'modal' ? setShowModal(false) : null)}>
       <div className='modal-content'>
-        <BiX className='close-btn' onClick={()=> setShowModal(false)}/>
         <div className='slide-image-container'>
-          <div className="chevron-icon">
-            <BiChevronLeft onClick={() => setActiveImageIndex(prevIndex => (prevIndex - 1 + car.images.length) % car.images.length)} />
-            <BiChevronRight onClick={() => setActiveImageIndex(prevIndex => (prevIndex + 1 + car.images.length) % car.images.length)} />
+          <BiX className='modal-close-btn' onClick={() => setShowModal(false)} />
+          <div className="modal-nav-arrows">
+            <BiChevronLeft 
+              onClick={() => setActiveImageIndex(prev => (prev - 1 + car.images.length) % car.images.length)} 
+              className="modal-nav-arrow"
+            />
+            <BiChevronRight 
+              onClick={() => setActiveImageIndex(prev => (prev + 1 + car.images.length) % car.images.length)} 
+              className="modal-nav-arrow"
+            />
           </div>
-          <img loading='lazy' src={car.images[activeImageIndex]} alt={car.id} />
+          <div className="modal-indicators">
+            {car.images.map((_, idx) => (
+              <span 
+                key={idx} 
+                className={`modal-indicator ${activeImageIndex === idx ? 'active' : ''}`}
+                onClick={() => setActiveImageIndex(idx)}
+              ></span>
+            ))}
+          </div>
+          <img loading='lazy' src={car.images[activeImageIndex]} alt={car.model} className="modal-main-img" />
         </div>
-        <div className='modal-details'>
+
+        <div className='modal-body'>
+          <div className="modal-info-header">
+            <h2 className="modal-brand">{car.brand}</h2>
+            <span className="modal-price">${car.price.toLocaleString()}</span>
+          </div>
           
+          <p className="modal-subtitle">{car.type} . {car.category}</p>
+          
+          <p className="modal-description">{car.description}</p>
+
+          <div className="modal-specs-grid">
+            {car.features.map((feature, idx) => (
+              <div key={idx} className="modal-spec-item">
+                <span className="spec-label">{feature.title.toUpperCase()}</span>
+                <span className="spec-value">{feature.value}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="modal-extra-sections">
+            <div className="extra-section">
+              <button className="extra-tab-btn outline">FINANCE</button>
+              <p className="extra-text">
+                {car.finance?.plans[0]?.details || "Our flexible finance plans allow you to spread the cost over 12-60 months with competitive rates."}
+              </p>
+            </div>
+            <div className="extra-section">
+              <button className="extra-tab-btn filled">WARRANTY</button>
+              <p className="extra-text">
+                {car.warranty?.coverage || "Every vehicle comes with our comprehensive 12-month standard warranty for complete peace of mind."}
+              </p>
+            </div>
+          </div>
+
+          <button className="btn-buy-now">BUY NOW</button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 
 export default Fleet;

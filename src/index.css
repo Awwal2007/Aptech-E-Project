@@ -20,6 +20,11 @@
   --hero-font-family: "Bebas Neue", sans-serif;
   --hero-grid-color: rgba(241, 241, 241, 0.05);
   --hero-glow-color: rgba(230, 57, 70, 0.05);
+  --modal-bg: rgba(0, 0, 0, 0.85); /* Overlay */
+  --modal-content-bg: #ffffff;
+  --modal-border: #00000010;
+  --modal-indicator-bg: rgba(0, 0, 0, 0.2);
+  --modal-indicator-active: #0A0A0C;
   --side-padding: 2.5rem;
 }
 
@@ -51,6 +56,11 @@
   --hero-glow-color: rgba(230, 57, 70, 0.1); */
       --hero-grid-color: rgba(240, 192, 196, 0.068);
     --hero-glow-color: rgba(96, 5, 13, 0.505);
+  --modal-bg: rgba(0, 0, 0, 0.9);
+  --modal-content-bg: #121214;
+  --modal-border: #ffffff10;
+  --modal-indicator-bg: rgba(255, 255, 255, 0.3);
+  --modal-indicator-active: #ffffff;
 }
 
 /* MANUAL LIGHT OVERRIDE */
@@ -67,7 +77,11 @@
   --hero-glow-color: rgba(230, 57, 70, 0.05);
   --gallery-bg: #ffffff;
   --gallery-text: #000000;
-  --modal-bg: rgba(255, 255, 255, 0.98);
+  --modal-bg: rgba(255, 255, 255, 0.9);
+  --modal-content-bg: #ffffff;
+  --modal-border: #00000010;
+  --modal-indicator-bg: rgba(0, 0, 0, 0.2);
+  --modal-indicator-active: #0A0A0C;
   --card-shadow: rgba(0, 0, 0, 0.2);
 }
 
