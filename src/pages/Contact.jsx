@@ -86,8 +86,8 @@ const Contact = () => {
 
                         <div>
                             <strong>Our Location</strong><br />
-                            <span>Victoria island </span> <br /> 
-                            <span>Victoria Island, Lagos 106104, Lagos</span>
+                            <span>West One Building </span> <br /> 
+                            <span>Agodi Gate, Ibadan, Nigeria</span>
                         </div>
                     </div>
 
