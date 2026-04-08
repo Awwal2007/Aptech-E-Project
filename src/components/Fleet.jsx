@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import './css/Fleet.css';
 import carsData from '../data/cars.json';
 import { BiSearch, BiChevronDown, BiChevronLeft, BiChevronRight, BiHeart, BiX } from 'react-icons/bi';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 const Fleet = () => {
   // Temporary state for inputs
@@ -15,6 +16,7 @@ const Fleet = () => {
 
   const [selectedCar, setSelectedCar] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [wishlist, setWishlist] = useState(false)
 
 
 
@@ -168,7 +170,7 @@ const Fleet = () => {
                     <span className="badge-hot">HOT</span>
                     <img loading='lazy' src={car.images[0]} alt={car.model} />
                     <button className="btn-wishlist">
-                      <BiHeart />
+                      {wishlist ? <AiFillHeart  onClick={()=> setWishlist(!wishlist)} /> : <AiOutlineHeart  onClick={()=> setWishlist(!wishlist)} fill='red' />}
                     </button>
                   </div>
                   <div className="car-details">
