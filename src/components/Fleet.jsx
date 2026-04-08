@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import './css/Fleet.css';
-import carsData from '../data/cars';
+import carsData from '../data/cars.json';
 import { BiSearch, BiChevronDown, BiChevronLeft, BiChevronRight, BiHeart, BiX } from 'react-icons/bi';
 
 const Fleet = () => {
@@ -17,6 +17,7 @@ const Fleet = () => {
   const [showModal, setShowModal] = useState(false);
 
 
+
   // Active state used for the visible results
   const [activeFilters, setActiveFilters] = useState({ ...tempFilters });
   
@@ -24,14 +25,14 @@ const Fleet = () => {
   const itemsPerPage = 8;
 
   // Derive unique filter options from data
-  const carTypes = ['All Types', ...new Set(carsData.cars.map(car => car.category))];
-  const brandsForDatalist = [...new Set(carsData.cars.map(car => car.brand))];
-  const modelOptions = ['All Models', ...new Set(carsData.cars.map(car => car.model))];
-  const fuelTypes = ['All Fuels', ...new Set(carsData.cars.map(car => car.type))];
+  const carTypes = ['All Types', ...new Set(carsData.map(car => car.category))];
+  const brandsForDatalist = [...new Set(carsData.map(car => car.brand))];
+  const modelOptions = ['All Models', ...new Set(carsData.map(car => car.model))];
+  const fuelTypes = ['All Fuels', ...new Set(carsData.map(car => car.type))];
 
   // Filtering Logic - depends ONLY on activeFilters
   const filteredCars = useMemo(() => {
-    return carsData.cars.filter(car => {
+    return carsData.filter(car => {
       const matchesSearch = car.brand.toLowerCase().includes(activeFilters.searchTerm.toLowerCase()) || 
                             car.model.toLowerCase().includes(activeFilters.searchTerm.toLowerCase());
       const matchesType = activeFilters.carType === 'All Types' || car.category === activeFilters.carType;
