@@ -87,7 +87,7 @@ const Contact = () => {
                         <div>
                             <strong>Our Location</strong><br />
                             <span>West One Building </span> <br /> 
-                            <span>Agodi Gate, Ibadan, Nigeria</span>
+                            <span>opposite Environmental Task force Office, Agodi, Ibadan</span>
                         </div>
                     </div>
 
