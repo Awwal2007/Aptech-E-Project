@@ -188,7 +188,7 @@ border-radius: 10px;
     background:none;
     color: var(--accent-color-hover );
     border: 1px solid var(--accent-color-hover);
-     transition: all 0.6s ease;
+     transition: all .3s ease;
 }
 
 
