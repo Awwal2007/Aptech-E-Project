@@ -16,9 +16,9 @@ const Fleet = () => {
 
   const [selectedCar, setSelectedCar] = useState(null);
   const [showModal, setShowModal] = useState(false);
-  const [wishlist, setWishlist] = useState(false)
-
-
+  
+  // FIX: Change to an array to hold multiple car IDs
+  const [wishlist, setWishlist] = useState([]); 
 
   // Active state used for the visible results
   const [activeFilters, setActiveFilters] = useState({ ...tempFilters });
@@ -68,8 +68,19 @@ const Fleet = () => {
     setCurrentPage(1);
   };
 
+  // FIX: Create a function to toggle individual car IDs in the wishlist
+  const toggleWishlist = (carId) => {
+    setWishlist((prevWishlist) => {
+      if (prevWishlist.includes(carId)) {
+        return prevWishlist.filter(id => id !== carId); // Remove if already in wishlist
+      } else {
+        return [...prevWishlist, carId]; // Add to wishlist
+      }
+    });
+  };
+
   return (
-    <section className="fleet-container"  id="brands">
+    <section className="fleet-container" id="brands">
       <div className="fleet-header">
         <p className="fleet-subtitle">OUR FLEET</p>
         <h2 className="fleet-title">FIND YOUR PERFECT DRIVE</h2>
@@ -169,9 +180,19 @@ const Fleet = () => {
                   <div className="car-img-wrapper">
                     <span className="badge-hot">HOT</span>
                     <img loading='lazy' src={car.images[0]} alt={car.model} />
-                    <button className="btn-wishlist">
-                      {wishlist ? <AiFillHeart  onClick={()=> setWishlist(!wishlist)} /> : <AiOutlineHeart  onClick={()=> setWishlist(!wishlist)} fill='red' />}
+                    
+                    {/* FIX: Move onClick to the button, check if car.id is in the array */}
+                    <button 
+                      className={`btn-wishlist ${wishlist.includes(car.id) ? 'active' : ''}`} 
+                      onClick={() => toggleWishlist(car.id)}
+                    >
+                      {wishlist.includes(car.id) ? (
+                        <AiFillHeart color='red' /> 
+                      ) : (
+                        <AiOutlineHeart />
+                      )}
                     </button>
+                    
                   </div>
                   <div className="car-details">
                     <h3>{car.brand}</h3>
@@ -305,6 +326,5 @@ const CarsDetails = ({ car, setShowModal }) => {
     </div>
   );
 };
-
 
 export default Fleet;
