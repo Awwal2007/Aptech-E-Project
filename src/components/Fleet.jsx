@@ -75,7 +75,7 @@ const Fleet = () => {
       <div className="fleet-layout">
         {/* Sidebar Filter */}
         <aside className="fleet-sidebar">
-          <h3>REFINE VELOCITY</h3>
+          <h3>CATEGORY</h3>
           
           <div className="filter-group">
             <div className="search-box">

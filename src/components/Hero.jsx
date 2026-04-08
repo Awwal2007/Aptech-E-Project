@@ -35,7 +35,6 @@ const Hero = () => {
       </div>
       
       <div className="hero-image-container">
-        {/* Hidden dummy image to maintain container height while absolute children slide */}
         <img 
           src={images[0]} 
           alt="" 

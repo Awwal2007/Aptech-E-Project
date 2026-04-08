@@ -823,9 +823,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/njpQ5RDZ",
-        "/https://postimg.cc/yg1knDMH",
-        "/https://postimg.cc/TLNY9Cjr"
+        "https://i.postimg.cc/63GL8F67/Whats-App-Image-2026-04-08-at-01-23-12.jpg",
+        "https://i.postimg.cc/Y9gYrg8h/Whats-App-Image-2026-04-08-at-01-23-56.jpg",
+        "https://i.postimg.cc/3NY43qdb/Whats-App-Image-2026-04-08-at-01-24-24.jpg"
       ],
       "description": "The Suzuki Jimny is a rugged mini 4x4 known for its off-road prowess. Its 1.5L engine (101 hp) is paired with a selectable 4WD system, making it capable on trails, while its compact size is practical in urban settings.",
       "features": [
@@ -860,9 +860,9 @@ const carsData = {
       "category": "Hatchback",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/VrJcY1MT",
-        "/https://postimg.cc/Kk6CxTmm",
-        "/https://postimg.cc/R38DLt66"
+        "https://i.postimg.cc/Px4fQ5qt/Whats-App-Image-2026-04-08-at-01-25-45.jpg",
+        "https://i.postimg.cc/wMMz55PR/Whats-App-Image-2026-04-08-at-01-29-06.jpg",
+        "https://i.postimg.cc/268NmFCw/Whats-App-Image-2026-04-08-at-01-29-56.jpg"
       ],
       "description": "The Suzuki Baleno is a subcompact hatchback with a roomy interior for its size. Its 1.2L engine (82 hp) and efficient drivetrain make it economical to run, and its design emphasizes practicality and comfort.",
       "features": [
@@ -897,9 +897,9 @@ const carsData = {
       "category": "Hatchback",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/Hrbwh7hJ",
-        "/https://postimg.cc/Kk2sW2f4",
-        "/https://postimg.cc/JsFfPvSL"
+        "https://i.postimg.cc/9QnLzdPB/Gemini-Generated-Image-3beer53beer53bee.png",
+        "https://i.postimg.cc/DZJk8fbQ/Whats-App-Image-2026-04-08-at-01-33-02.jpg",
+        "https://i.postimg.cc/q7BpMdLz/Whats-App-Image-2026-04-08-at-01-31-30.jpg"
       ],
       "description": "The Suzuki Ignis is a tiny crossover-styled hatchback. Its 1.2L engine (83 hp) and nimble dimensions make it easy to maneuver in the city, and its higher ride height adds a bit of SUV character in a small package.",
       "features": [
@@ -934,9 +934,9 @@ const carsData = {
       "category": "Hatchback",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/f3TVftnM",
-        "/https://postimg.cc/9zqrbHSb",
-        "/https://postimg.cc/Thm3mqLs"
+        "https://i.postimg.cc/CKbbYkcn/Whats-App-Image-2026-04-08-at-01-36-38.jpg",
+        "https://i.postimg.cc/xj6M003w/Whats-App-Image-2026-04-08-at-01-37-02.jpg",
+        "https://i.postimg.cc/dQNkb5qJ/Whats-App-Image-2026-04-08-at-01-37-27.jpg"
       ],
       "description": "The MG3 is a small hatchback offering sharp styling at an affordable price. Its 1.5L engine (111 hp) provides adequate city driving performance, and the cabin has modern features for the segment.",
       "features": [
@@ -971,9 +971,9 @@ const carsData = {
       "category": "Electric",
       "type": "Electric",
       "images": [
-        "/https://postimg.cc/3yvxBgfQ",
-        "/https://postimg.cc/ThRTLMxM",
-        "/https://postimg.cc/v1FsGCh0"
+        "https://i.postimg.cc/jj8nRcz2/Whats-App-Image-2026-04-08-at-01-39-55.jpg",
+        "https://i.postimg.cc/zDhvQ8PB/Whats-App-Image-2026-04-08-at-01-40-37.jpg",
+        "https://i.postimg.cc/9fzFYh7H/Whats-App-Image-2026-04-08-at-01-41-19.jpg"
       ],
       "description": "The MG4 EV is an all-electric hatchback with a modern design and practicality. It uses a ground-up EV platform, producing around 250 hp for the dual-motor version, and offers up to ~275 miles of range[20].",
       "features": [
@@ -1045,9 +1045,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/xNY8qcRC",
-        "/https://postimg.cc/1fBnnc2d",
-        "/https://postimg.cc/184GyjXD"
+        "https://i.postimg.cc/SRYMT9YW/Whats-App-Image-2026-04-08-at-01-47-26.jpg",
+        "https://i.postimg.cc/jS0z1MXR/Whats-App-Image-2026-04-08-at-01-47-01.jpg",
+        "https://i.postimg.cc/BnBMBWG7/Whats-App-Image-2026-04-08-at-01-48-10.jpg"
       ],
       "description": "The MG ZS is a subcompact SUV that offers affordability and practicality. Its 1.5L engine (106 hp) suits city driving, and higher trims offer additional equipment to make it a strong value proposition.",
       "features": [
@@ -1082,9 +1082,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/t1j4BsKx",
-        "/https://postimg.cc/14jRL7xy",
-        "/https://postimg.cc/7C9wXm1N"
+        "https://i.postimg.cc/Bv8PQDNM/Whats-App-Image-2026-04-08-at-01-49-04.jpg",
+        "https://i.postimg.cc/7YxCJjmJ/Whats-App-Image-2026-04-08-at-01-49-47.jpg",
+        "https://i.postimg.cc/C1T5h2z9/Whats-App-Image-2026-04-08-at-01-49-21.jpg"
       ],
       "description": "The MG Hector is a mid-size SUV with a spacious interior. Its 1.5L turbo engine (143 hp) powers the SUV, and its feature-rich cabin includes an integrated infotainment system and multiple airbags for safety.",
       "features": [
@@ -1119,9 +1119,9 @@ const carsData = {
       "category": "Sedan",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/64vss0Rv",
-        "/https://postimg.cc/JDsvJqpd",
-        "/https://postimg.cc/30MSGH45"
+        "https://i.postimg.cc/HnSTyvkB/Whats-App-Image-2026-04-08-at-01-55-45.jpg",
+        "https://i.postimg.cc/fLCNGqmZ/Whats-App-Image-2026-04-08-at-01-53-44.jpg",
+        "https://i.postimg.cc/KjjddGmz/Whats-App-Image-2026-04-08-at-01-55-55.jpg"
       ],
       "description": "The Honda Civic is a compact sedan with sporty handling and modern styling. Its 2.0L engine (150 hp)[21] delivers smooth performance and high fuel efficiency, making it an excellent all-rounder.",
       "features": [
@@ -1156,9 +1156,9 @@ const carsData = {
       "category": "Sedan",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/XXcm5pLW",
-        "/https://postimg.cc/H8pSz922",
-        "/https://postimg.cc/jCZvKNvT"
+        "https://i.postimg.cc/1RLQLFN8/Whats-App-Image-2026-04-08-at-01-58-27.jpg",
+        "https://i.postimg.cc/RhtjMPJj/Whats-App-Image-2026-04-08-at-02-01-19.jpg",
+        "https://i.postimg.cc/Gh1fFxy4/Whats-App-Image-2026-04-08-at-01-59-55.jpg"
       ],
       "description": "The Honda Accord is a sporty midsize sedan. Its 1.5L turbocharged engine (192 hp)[22] offers strong performance and efficiency, and the refined cabin and ride quality make it a benchmark in its class.",
       "features": [
@@ -1193,9 +1193,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/f3NYYT5H",
-        "/https://postimg.cc/kBRSZtHm",
-        "/https://postimg.cc/1fFgM18v"
+        "https://i.postimg.cc/DzW5kSGK/Whats-App-Image-2026-04-08-at-02-02-45.jpg",
+        "https://i.postimg.cc/kXfy2QFB/Whats-App-Image-2026-04-08-at-02-05-07.jpg",
+        "https://i.postimg.cc/Gh7kLcdn/Whats-App-Image-2026-04-08-at-02-03-58.jpg"
       ],
       "description": "The Honda CR-V is a top-selling compact SUV. Its 1.5L turbo engine (190 hp) balances power and fuel economy, and the spacious cabin with 5 seats and 39.2 cu.ft. cargo makes it very practical for families.",
       "features": [
@@ -1230,9 +1230,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/67b5tM7p",
-        "/https://postimg.cc/N5vGs9MY",
-        "/https://postimg.cc/G8srrdnd"
+        "https://i.postimg.cc/qR4tcY4y/Whats-App-Image-2026-04-08-at-02-06-53.jpg",
+        "https://i.postimg.cc/wT71kDYt/Whats-App-Image-2026-04-08-at-02-07-42.jpg",
+        "https://i.postimg.cc/nz3L4hdj/Whats-App-Image-2026-04-08-at-02-07-15.jpg"
       ],
       "description": "The Honda HR-V is a subcompact crossover with versatile interior space. Powered by a 2.0L engine (158 hp), it emphasizes practicality and efficiency, with features like Honda Magic Seats that fold flat for cargo flexibility.",
       "features": [
@@ -1267,9 +1267,9 @@ const carsData = {
       "category": "Truck",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/zL4Zx6bd",
-        "/https://postimg.cc/fkcnvHwc",
-        "/https://postimg.cc/hJk6Lm6r"
+        "https://i.postimg.cc/Y9CrCwpw/Whats-App-Image-2026-04-08-at-02-11-12.jpg",
+        "https://i.postimg.cc/zDMz8M6c/Whats-App-Image-2026-04-08-at-02-10-22.jpg",
+        "https://i.postimg.cc/9M02jtBv/Whats-App-Image-2026-04-08-at-02-11-50.jpg"
       ],
       "description": "The Honda Ridgeline is a unibody pickup known for a car-like ride. Its 3.5L V6 (280 hp) provides ample power and a smooth 9-speed automatic transmission. The unique in-bed trunk and fold-down tailgate add to its utility.",
       "features": [
@@ -1304,9 +1304,9 @@ const carsData = {
       "category": "Sedan",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/2b5GBS80",
-        "/https://postimg.cc/jWMQKYQN",
-        "/https://postimg.cc/6yCrqvf8"
+        "https://i.postimg.cc/KzPHwKXh/Whats-App-Image-2026-04-08-at-02-15-28.jpg",
+        "https://i.postimg.cc/G2CMFc4M/Whats-App-Image-2026-04-08-at-02-15-41.jpg",
+        "https://i.postimg.cc/4NSB8vKQ/Whats-App-Image-2026-04-08-at-02-16-02.jpg"
       ],
       "description": "The Mercedes-Benz C 300 sedan is a compact luxury car with an upscale interior. Its 2.0L turbo engine (255 hp)[23] and 48V hybrid assist deliver strong performance (0–60 in 6.0s)[24], while riding on a refined suspension.",
       "features": [
@@ -1341,9 +1341,9 @@ const carsData = {
       "category": "Sedan",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/ZCPN4hJv",
-        "/https://postimg.cc/S2zXPBZM",
-        "/https://postimg.cc/B8jtLWfF"
+        "https://i.postimg.cc/fTpf7wFC/Whats-App-Image-2026-04-08-at-02-17-58.jpg",
+        "https://i.postimg.cc/QtfpFs10/Whats-App-Image-2026-04-08-at-02-18-35.jpg",
+        "https://i.postimg.cc/BvgFzshm/Whats-App-Image-2026-04-08-at-02-19-04.jpg"
       ],
       "description": "The Mercedes-Benz E 350 is a midsize luxury sedan blending elegance and power. Its turbocharged 2.0L engine (255 hp)[25] provides smooth acceleration, and the cabin features high-quality materials and advanced tech. A 3.0L inline-six (375 hp) is also available.",
       "features": [
@@ -1378,9 +1378,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/v4c69xW6",
-        "/https://postimg.cc/KRYKS3sY",
-        "/https://postimg.cc/D8mzYk8J"
+        "https://i.postimg.cc/SxGLBWRV/Whats-App-Image-2026-04-08-at-02-20-56.jpg",
+        "https://i.postimg.cc/65rCZdrC/Whats-App-Image-2026-04-08-at-02-21-19.jpg",
+        "https://i.postimg.cc/Yqzm0t73/Whats-App-Image-2026-04-08-at-02-22-15.jpg"
       ],
       "description": "The Mercedes-Benz GLC 300 is a compact luxury SUV that combines style and utility. Its 2.0L turbocharged engine (255 hp)[26] and standard AWD (4MATIC) allow for confident acceleration (0–60 in 6.0s)[27], while its interior is refined and spacious.",
       "features": [
@@ -1415,9 +1415,9 @@ const carsData = {
       "category": "Sedan",
       "type": "Gasoline / Hybrid",
       "images": [
-        "/https://postimg.cc/67hwpYyF",
-        "/https://postimg.cc/4mhg9JYY",
-        "/https://postimg.cc/621k8Sw4"
+        "https://i.postimg.cc/3wsw-9q7r/Whats-App-Image-2026-04-08-at-02-23-38.jpg",
+        "https://i.postimg.cc/3JtJzN7F/Whats-App-Image-2026-04-08-at-02-24-34.jpg",
+        "https://i.postimg.cc/fywDrnrC/image.png"
       ],
       "description": "The Mercedes-Benz S 500 is a flagship luxury sedan. Its twin-turbo V6 (429 hp) provides effortless power, and features like E-Active Body Control suspension make it exceptionally comfortable and high-tech, with a top speed limited to 250 km/h.",
       "features": [
@@ -1452,9 +1452,9 @@ const carsData = {
       "category": "Electric",
       "type": "Electric",
       "images": [
-        "/https://postimg.cc/ts22R69v",
-        "/https://postimg.cc/2VxxTWbM",
-        "/https://postimg.cc/21KhX7kN"
+        "https://i.postimg.cc/9fjSpPK2/Whats-App-Image-2026-04-08-at-02-33-30.jpg",
+        "https://i.postimg.cc/vHJSYLQY/Whats-App-Image-2026-04-08-at-02-33-33.jpg",
+        "https://i.postimg.cc/cJshCFPC/Whats-App-Image-2026-04-08-at-02-33-36.jpg"
       ],
       "description": "The Mercedes-Benz EQS 580 is a luxury electric sedan. Its dual motors produce 516 hp, enabling rapid acceleration. With a large battery pack, it offers a range over 350 miles, and the cabin features futuristic design and extensive digital displays.",
       "features": [
@@ -1489,9 +1489,9 @@ const carsData = {
       "category": "Sedan",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/14BHr6NL",
-        "/https://postimg.cc/4HxpSLhB",
-        "/https://postimg.cc/dDf7FVMq"
+        "https://i.postimg.cc/65Jmwf65/Whats-App-Image-2026-04-08-at-02-35-11.jpg",
+        "https://i.postimg.cc/XqwxXtNS/Whats-App-Image-2026-04-08-at-02-35-28.jpg",
+        "https://i.postimg.cc/bNy1QZ32/Whats-App-Image-2026-04-08-at-02-35-47.jpg"
       ],
       "description": "The Toyota Corolla is a reliable compact car. Its 1.8L engine (139 hp) and CVT provide smooth power delivery, and it boasts excellent fuel economy and safety features, making it a practical daily driver.",
       "features": [
@@ -1526,9 +1526,9 @@ const carsData = {
       "category": "Sedan",
       "type": "Gasoline",
       "images": [
-        "/https://postimg.cc/QHpjz8h6",
-        "/https://postimg.cc/9z924mRW",
-        "/https://postimg.cc/gxSQSQXM"
+        "https://i.postimg.cc/L6Whn57M/Whats-App-Image-2026-04-08-at-02-37-34.jpg",
+        "https://i.postimg.cc/2jcSK3CB/Whats-App-Image-2026-04-08-at-02-38-19.jpg",
+        "https://i.postimg.cc/fbDsLhwh/Whats-App-Image-2026-04-08-at-02-37-14.jpg"
       ],
       "description": "The Toyota Camry is a bestselling midsize sedan. Its 2.5L engine (202 hp) offers a good balance of power and efficiency, and it provides a comfortable ride with a well-equipped interior.",
       "features": [
@@ -1563,9 +1563,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "https://postimg.cc/ZBkfXST7",
-        "https://postimg.cc/ZBF1cRrP",
-        "https://postimg.cc/sv0bKbh3"
+        "https://i.postimg.cc/pTrghW3H/Whats-App-Image-2026-04-08-at-02-43-50.jpg",
+        "https://i.postimg.cc/Y9JMtL0P/Whats-App-Image-2026-04-08-at-02-43-51.jpg",
+        "https://i.postimg.cc/vZQM8s8x/Whats-App-Image-2026-04-08-at-02-43-51-(1).jpg"
       ],
       "description": "The Toyota RAV4 is a compact SUV with a rugged look. Its 2.5L engine (203 hp) provides ample acceleration, and it offers a comfortable ride with optional AWD and a spacious, high-tech interior.",
       "features": [
@@ -1600,9 +1600,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "https://postimg.cc/YvY8gPNW",
-        "https://postimg.cc/PN0m4456",
-        "https://postimg.cc/cvk1RDsf"
+        "https://i.postimg.cc/BnwyW9XM/Whats-App-Image-2026-04-08-at-02-45-49.jpg",
+        "https://i.postimg.cc/qMvjpDVd/Whats-App-Image-2026-04-08-at-02-46-18.jpg",
+        "https://i.postimg.cc/cJ0KNj2k/Whats-App-Image-2026-04-08-at-02-46-09.jpg"
       ],
       "description": "The Toyota Highlander is a three-row SUV ideal for families. Its 3.5L V6 (295 hp) provides strong acceleration, and features like a quiet cabin and optional AWD make it comfortable and capable for road trips.",
       "features": [
@@ -1637,9 +1637,9 @@ const carsData = {
       "category": "Hatchback",
       "type": "Hybrid",
       "images": [
-        "https://postimg.cc/gnYGf9jV",
-        "https://postimg.cc/m1VWbDkb",
-        "https://postimg.cc/MMSGHn6m"
+        "https://i.postimg.cc/WbZtqTPH/Whats-App-Image-2026-04-08-at-02-47-33.jpg",
+        "https://i.postimg.cc/ThvdJ5XW/Whats-App-Image-2026-04-08-at-02-49-26.jpg",
+        "https://i.postimg.cc/wvtRWNnZ/Whats-App-Image-2026-04-08-at-02-48-29.jpg"
       ],
       "description": "The Toyota Prius is an iconic hybrid. Its 1.8L engine paired with electric motors produces 121 hp, and it achieves excellent fuel economy (~56 mpg). The aerodynamic design and efficient powertrain make it ideal for economy.",
       "features": [
@@ -1674,9 +1674,9 @@ const carsData = {
       "category": "Truck",
       "type": "Gasoline",
       "images": [
-        "https://postimg.cc/6yyB9rVW",
-        "https://postimg.cc/Sn63qRPK",
-        "https://postimg.cc/rz5Sf4R6"
+        "https://i.postimg.cc/X7gqkxpC/Whats-App-Image-2026-04-08-at-02-52-43.jpg",
+        "https://i.postimg.cc/dVpY2TmG/Whats-App-Image-2026-04-08-at-02-53-16.jpg",
+        "https://i.postimg.cc/XNzQ7cVv/image.png"
       ],
       "description": "The Ford F-150 is a full-size pickup truck. Its base 3.5L V6 (400 hp) or optional 5.0L V8 deliver strong towing and payload capabilities. Its rugged design and modern features make it a leader in its segment.",
       "features": [
@@ -1711,9 +1711,9 @@ const carsData = {
       "category": "Coupe",
       "type": "Gasoline",
       "images": [
-        "https://postimg.cc/RNXJYLSh",
-        "https://postimg.cc/0zjKkZ29",
-        "https://postimg.cc/w1nM6pGh"
+        "https://i.postimg.cc/HkC0V6Fw/Whats-App-Image-2026-04-08-at-02-54-31.jpg",
+        "https://i.postimg.cc/cLMRc5pt/Whats-App-Image-2026-04-08-at-02-55-43.jpg",
+        "https://i.postimg.cc/QMdTJNgn/Whats-App-Image-2026-04-08-at-02-54-50.jpg"
       ],
       "description": "The Ford Mustang is an American sports coupe. The base EcoBoost version with a 2.3L turbo I4 (310 hp) is quick, while the GT’s 5.0L V8 (480 hp) delivers classic muscle car performance and a roar.",
       "features": [
@@ -1748,9 +1748,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "https://postimg.cc/LY6rwqVd",
-        "https://postimg.cc/QVvykYwc",
-        "https://postimg.cc/DJ8x11cR"
+        "https://i.postimg.cc/NM1Bym90/image.png",
+        "https://i.postimg.cc/wTBYzSk4/Whats-App-Image-2026-04-08-at-02-56-55.jpg",
+        "https://i.postimg.cc/PxM0s4vf/Whats-App-Image-2026-04-08-at-02-58-41.jpg"
       ],
       "description": "The Ford Explorer is a three-row SUV. Its 2.3L turbocharged I4 (300 hp) and optional V6 provide ample power, and its technology-rich interior offers features like SYNC infotainment and advanced safety systems.",
       "features": [
@@ -1785,9 +1785,9 @@ const carsData = {
       "category": "SUV",
       "type": "Gasoline",
       "images": [
-        "https://postimg.cc/FfKpQ0wg",
-        "https://postimg.cc/McX7Lqjv",
-        "https://postimg.cc/4Y2tVqFT"
+        "https://i.postimg.cc/0NYBDff3/Whats-App-Image-2026-04-08-at-02-59-54.jpg",
+        "https://i.postimg.cc/Xvkspvjc/image.png",
+        "https://i.postimg.cc/vmbzFdrD/image.png"
       ],
       "description": "The Ford Escape is a compact SUV with a turbocharged 1.5L I3 engine (180 hp). It offers good fuel economy and a comfortable ride, along with modern tech like an available hybrid powertrain for better efficiency.",
       "features": [
@@ -1822,9 +1822,9 @@ const carsData = {
       "category": "Hatchback",
       "type": "Gasoline",
       "images": [
-        "https://postimg.cc/PCJygmgW",
-        "https://postimg.cc/RNsQLWW5",
-        "https://postimg.cc/t7DgsPMc"
+        "https://i.postimg.cc/YCfPmR8s/Whats-App-Image-2026-04-08-at-03-04-56.jpg",
+        "https://i.postimg.cc/Vk1G1M16/Whats-App-Image-2026-04-08-at-03-05-20.jpg",
+        "https://i.postimg.cc/TYv5HJqT/Whats-App-Image-2026-04-07-at-4-05-19-PM.jpg"
       ],
       "description": "The Ford Focus is a compact hatchback. Its 2.0L I4 engine (160 hp) provides nimble performance, and features like sharp steering and efficient fuel economy make it a practical choice for daily use.",
       "features": [
@@ -1860,9 +1860,9 @@ const carsData = {
       "type": "Gasoline",
 
       "images": [
-        "https://postimg.cc/NKb6j5w3",
-        "https://postimg.cc/d7pThCNW",
-        "https://postimg.cc/8FJ7g5kr"
+        "https://i.postimg.cc/g0bN4Zt2/NISSAN-ALTIMA.jpg",
+        "https://i.postimg.cc/gJkyBqVP/NISAAN-ALTIMA-SV.jpg",
+        "https://i.postimg.cc/W4SgrFQS/NISSAN-ALTIMA-1.jpg"
       ],
 
       "description": "The Nissan Altima delivers a perfect blend of comfort, fuel efficiency, and advanced driver assistance features, making it ideal for everyday driving.",
@@ -1904,9 +1904,9 @@ const carsData = {
       "type": "Gasoline",
 
       "images": [
-        "https://postimg.cc/bSzbPhBv",
-        "https://postimg.cc/G4BDdzqd",
-        "https://postimg.cc/vc07Q4y0"
+        "https://i.postimg.cc/909BGXPy/NISSAN-ROGUE-FV.jpg",
+        "https://i.postimg.cc/qvwxc5Kh/NISSAN-ROGUE-IV.jpg",
+        "https://i.postimg.cc/MpS9mBFJ/Whats-App-Image-2026-04-08-at-03-51-59.jpg"
       ],
 
       "description": "The Nissan Rogue is a compact SUV designed for families, offering spacious interiors, safety technologies, and impressive fuel economy.",
@@ -1948,9 +1948,9 @@ const carsData = {
       "type": "Electric",
 
       "images": [
-        "https://postimg.cc/yWv3R2Gc",
-        "https://postimg.cc/bGxsw5bX",
-        "https://postimg.cc/ppmrFr8s"
+        "https://i.postimg.cc/qMdsPTXb/Whats-App-Image-2026-04-08-at-03-56-07.jpg",
+        "https://i.postimg.cc/zfMW0ZGf/Whats-App-Image-2026-04-08-at-03-56-09.jpg",
+        "https://i.postimg.cc/Nf4HZr0v/Whats-App-Image-2026-04-08-at-03-56-09-(1).jpg"
       ],
 
       "description": "The Nissan Leaf is a fully electric vehicle known for its eco-friendly performance, smooth ride, and advanced EV technology.",
@@ -1984,6 +1984,7 @@ const carsData = {
     }
   ]
 }
+
 
 
 export default carsData;
