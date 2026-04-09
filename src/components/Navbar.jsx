@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./css/Navbar.css"
 import { BiMenu, BiSun, BiMoon, BiX } from 'react-icons/bi'
+import { MdOutlineWbSunny } from 'react-icons/md'
 import { NavLink, Link } from 'react-router-dom'
 import logo from "../assets/logo.png"
 import logoWhite from "../assets/logo-white.png"
@@ -36,7 +37,10 @@ const Navbar = ({theme, toggleTheme}) => {
           )}
         </div>
         <div className="visitor-counter">
-          <BiMoon className="toggle-mode-btn" onClick={toggleTheme}/>
+          {
+            theme === 'dark' ?  <MdOutlineWbSunny  className="toggle-mode-btn" onClick={toggleTheme}/> : <BiMoon className="toggle-mode-btn" onClick={toggleTheme}/>
+          }
+          
           <VisitorCounter />
         </div>
     </header>
