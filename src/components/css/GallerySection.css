@@ -171,9 +171,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.modal-content {
+    height: 90vh;
+}
 .modal-content img {
-  max-width: 90%;
-  max-height: 80vh;
+  max-width: 100%;
+  width: 100%;
+  max-height: 65vh;
+  object-fit: cover !important;
 }
 
 .modal-details-reveal h2{
