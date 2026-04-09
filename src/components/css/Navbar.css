@@ -154,7 +154,9 @@ header .visitor-counter .toggle-mode-btn:hover {
     }
 
     header .visitor-counter p {
-        display: none; /* Hide visitor text on very small screens to save space */
+        font-size: .7rem;
+        padding: 6px 6px;
+        margin: 0px;
     }
 
     header .visitor-counter .toggle-mode-btn {
