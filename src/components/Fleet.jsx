@@ -176,7 +176,7 @@ const Fleet = () => {
           <div className="car-grid">
             {currentCars.length > 0 ? (
               currentCars.map(car => (
-                <div key={car.id} className="car-card">
+                <div onClick={()=> {setSelectedCar(car); setShowModal(true)}} key={car.id} className="car-card">
                   <div className="car-img-wrapper">
                     <span className="badge-hot">HOT</span>
                     <img loading='lazy' src={car.images[0]} alt={car.model} />
