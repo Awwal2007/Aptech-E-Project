@@ -11,7 +11,7 @@ import { useState } from 'react'
 import TickerBox from './components/TickerBox'
 
 const App = () => {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme')
