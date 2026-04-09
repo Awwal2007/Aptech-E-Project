@@ -185,7 +185,7 @@
   top: 30px;
   right: 40px;
   font-size: 3rem;
-  color: white;
+  color: var(--secondary-color);
   background: none;
   border: none;
   cursor: pointer;
@@ -195,7 +195,7 @@
   position: absolute;
   top: 50%;
   font-size: 3rem;
-  color: white;
+  color: var(--secondary-color);
   background: none;
   border: none;
   cursor: pointer;
