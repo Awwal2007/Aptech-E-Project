@@ -5,12 +5,14 @@ import { BiSearch, BiChevronDown, BiChevronLeft, BiChevronRight, BiHeart, BiX } 
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 const Fleet = () => {
+  const lowestPrice = Math.min(...carsData.map((t)=> t.price))
+  const highestPrice = Math.max(...carsData.map((t)=> t.price))
   // Temporary state for inputs
   const [tempFilters, setTempFilters] = useState({
     searchTerm: '',
     carType: 'All Types',
     model: 'All Models',
-    maxPrice: 200000,
+    maxPrice: highestPrice,
     fuelType: 'All Fuels'
   });
 
@@ -31,6 +33,8 @@ const Fleet = () => {
   const brandsForDatalist = [...new Set(carsData.map(car => car.brand))];
   const modelOptions = ['All Models', ...new Set(carsData.map(car => car.model))];
   const fuelTypes = ['All Fuels', ...new Set(carsData.map(car => car.type))];
+
+
 
   // Filtering Logic - depends ONLY on activeFilters
   const filteredCars = useMemo(() => {
@@ -140,16 +144,16 @@ const Fleet = () => {
             </div>
             <input 
               type="range" 
-              min="20000" 
-              max="200000" 
-              step="5000"
+              min={lowestPrice} 
+              max={highestPrice} 
+              step="2000"
               value={tempFilters.maxPrice} 
               onChange={(e) => setTempFilters({ ...tempFilters, maxPrice: parseInt(e.target.value) })}
               className="price-slider"
             />
             <div className="price-range text-muted">
-              <span>$20k</span>
-              <span>$200k</span>
+              <span>${lowestPrice}</span>
+              <span>${highestPrice}</span>
             </div>
           </div>
 
