@@ -164,11 +164,17 @@ header .visitor-counter .toggle-mode-btn:hover {
     header .hamburger {
         display: flex;
         font-size: 1.8rem;
-        margin-left: 1rem;
+        margin-left: 10rem;
     }
 
     header .visitor-counter {
         margin-left: auto; /* Pushes the toggle to the right next to hamburger */
         gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .hamburger {
+        margin-left: 3rem;
     }
 }
