@@ -206,6 +206,7 @@
 
   .about-text {
     text-align: center;
+    max-width: none;
   }
 
   .about-text h1 {
